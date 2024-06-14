@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Vendedores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Gerenciamento de Vendedores</h1>
+    <form id="vendedorForm">
+        <input type="hidden" id="vendedorId" name="vendedorId">
+        <div>
+            <label for="vendedorNome">Nome:</label>
+            <input type="text" id="vendedorNome" name="vendedorNome" required>
+        </div>
+        <div>
+            <label for="vendedorEndereco">Endereço:</label>
+            <input type="text" id="vendedorEndereco" name="vendedorEndereco" required>
+        </div>
+        <div>
+            <label for="vendedorTelefone">Telefone:</label>
+            <input type="text" id="vendedorTelefone" name="vendedorTelefone" required>
+        </div>
+        <button type="submit">Salvar</button>
+    </form>
+    <h2>Lista de Vendedores</h2>
+    <table id="vendedoresTable">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Telefone</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
